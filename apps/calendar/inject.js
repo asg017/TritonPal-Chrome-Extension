@@ -16,7 +16,7 @@ console.log('ayyy');
 
 
 
-/*
+
 var topDiv = document.createElement('input');
 
 topDiv.style.position = 'inline';
@@ -33,4 +33,3 @@ topDiv.style.backgroundColor = 'yellow';
 topDiv.style.zIndex = 100;
 
 document.getElementById('schedule-addevent-div').appendChild(topDiv);
-*/
