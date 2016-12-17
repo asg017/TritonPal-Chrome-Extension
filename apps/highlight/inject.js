@@ -194,7 +194,7 @@ document.onmouseup = function(e) {
 			}
 		};
 
-		request.open('GET', 'https://calhacks3twitter.herokuapp.com/apps/courses?class_code='+selection, true);
+		request.open('GET', 'https://tritonpal.herokuapp.com/apps/courses?class_code='+selection, true);
 		request.send(null);
 
 	}
