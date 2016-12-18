@@ -25,7 +25,7 @@
 
 		"content_scripts": [
 		{
-			"matches": 
+			"matches":
 				["http://*/*", "https://*/*"]
 				,
 			"js": ["./apps/highlight/inject.js"]

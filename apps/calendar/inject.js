@@ -1,22 +1,6 @@
 console.log('ayyy');
 
 
-
-
-
-
-
-
-
-
-//MICHELLE DONT LOOK BELOW SPOILERS DOWN BELOW
-
-
-
-
-
-
-
 var topDiv = document.createElement('input');
 
 topDiv.style.position = 'inline';
@@ -33,3 +17,20 @@ topDiv.style.backgroundColor = 'yellow';
 topDiv.style.zIndex = 100;
 
 document.getElementById('schedule-addevent-div').appendChild(topDiv);
+
+
+
+//1. Create the button
+var button = document.createElement("button");
+button.innerHTML = "Do Something";
+
+// 2. Append somewhere
+/*
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button); */
+document.getElementById('schedule-addevent-div').appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  alert(document.getElementById("viewbooklistlink").getAttribute("href"));
+});
