@@ -43,9 +43,11 @@
 		}
 	],
 
-		/*"chrome_url_overrides" : {
+		"chrome_url_overrides" : {
 			"newtab": "./apps/newtab/landing.html"
-		},*/
+		},
+
+		"content_security_policy": "script-src 'self' https://platform.twitter.com/js/timeline.af7715ccfd05761b10e680b0b0b2117b.js https://cdn.syndication.twimg.com/timeline/profile https://vortex.accuweather.com/adc2010/oap/javascript/jquery-1.9.1.min.js; object-src 'self'",
 
 		"browser_action": {
 			"default_icon": "icons/48.png",
