@@ -19,7 +19,8 @@
 
 		"permissions" : [
 			"https://calhacks3twitter.herokuapp.com/*",
-			"notifications"
+			"notifications",
+			"storage"
 			],
 
 
@@ -41,6 +42,10 @@
 				"js" : ["./apps/calendar/inject.js"]
 		}
 	],
+
+		"chrome_url_overrides" : {
+			"newtab": "./apps/newtab/landing.html"
+		},
 
 		"browser_action": {
 			"default_icon": "icons/48.png",
