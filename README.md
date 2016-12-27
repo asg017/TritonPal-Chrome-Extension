@@ -20,3 +20,5 @@ If you already have git installed in your computer, just run this command in wha
 ```bash
 git clone https://github.com/asg017/TritonPal-Chrome-Extension.git
 ```
+
+####Options #2: Download Zip
