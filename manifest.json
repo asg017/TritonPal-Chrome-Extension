@@ -25,28 +25,42 @@
 
 
 		"content_scripts": [
+
+		//Highlight Courses App
 		{
 			"matches":
 				["http://*/*", "https://*/*"]
 				,
 			"js": ["./apps/highlight/inject.js"]
 		},
+
+		//Pretty App
 		{
 			"matches":
 				["https://act.ucsd.edu/studentDars/view"],
 				"js" : ["./apps/pretty/inject.js"]
 		},
+
+		//WebReg->gCal App
 		{
 			"matches":
 				["https://act.ucsd.edu/webreg2/*"],
 				"js" : ["./apps/calendar/inject.js"]
+		},
+
+		//New Tab Helper App
+		{
+			"matches":
+				["https://act.ucsd.edu/myTritonlink20/*"],
+				"js" : ["./apps/newtab/widgets/calendar/inject.js"]
 		}
 	],
-
+		//To add custom newtab
 		"chrome_url_overrides" : {
 			"newtab": "./apps/newtab/landing.html"
 		},
 
+		//To access some API's in newtab
 		"content_security_policy": "script-src 'self' https://platform.twitter.com/js/timeline.af7715ccfd05761b10e680b0b0b2117b.js https://cdn.syndication.twimg.com/timeline/profile https://vortex.accuweather.com/adc2010/oap/javascript/jquery-1.9.1.min.js; object-src 'self'",
 
 		"browser_action": {

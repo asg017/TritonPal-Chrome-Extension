@@ -2,9 +2,19 @@
 
 <head>
 
-<title> New Tab (UCSD) </title>
+<title> New Tab | TritonPal </title>
+<!--<link rel="stylesheet" type="text/css" href="https://act.ucsd.edu/myTritonlink20/css/mytritonlink.css">
+<link rel="stylesheet" type="text/css" href="https://ucsd.edu/common/cwp/3.2.0/base-min.css">
+<link rel="stylesheet" type="text/css" href="https://students.ucsd.edu/_resources/student_global/css/student_global.css">
+<link rel="stylesheet" type="text/css" href="https://ucsd.edu/common/cwp/3.2.0/cms-min.css">
+<link rel="stylesheet" type="text/css" href="https://www.ucsd.edu/common/cwp/active-cherry/base-min.css">-->
+
+
+<link rel="stylesheet" type="text/css" href="stolen.css">
 <link rel="stylesheet" type="text/css" href="landing.css">
+
 <script src="landing.js"></script>
+
 </head>
 
 <body>
@@ -12,51 +22,48 @@
 
 	
 	<div id="settings"> </div>
-	<!--<div id="greetings">
-		<span id="time"> </span>
-		<br>
-		Good Morning, Alex.
-	</div> -->
 
 
-	<div id="academic_app">
+	<div class="widget beta" id="academic_app">
 		little app to search specific UCSD course, faculty emails, textbook prices, etc.
 	</div>
-	<div id="weather_app">
-	<a href="http://www.accuweather.com/en/us/la-jolla-ca/92037/weather-forecast/2168186" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1482570599896" class="aw-widget-current"  data-locationkey="2168186" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1482570599896"></div><script type="text/javascript" src="weather.js"></script>
-
-	</div>
-	<div id="transportation_app">
+	<div class="widget beta" id="transportation_app">
 		UCSD Shuttle data, MTSBus data, parking spot availability?
 	</div>
 
-	<table id="user_tiles_main">
+	<div class="widget" id="schedule_app">
+		<div id="class_schedule">
+		</div>
+	</div>
+
+
+	<table class="widget hide_schedule" id="user_tiles_main">
 		<tr>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
 		</tr>
 
 		<tr>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
-			<td> <div class="user_tile"> </div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
+			<td> <div class="user_tile"> <span> </span></div> </td>
 		</tr>
 	</table>
 
-	<div id="socialmedia_app">
-		<a class="twitter-timeline" href="https://www.twitter.com/UCSanDiego">Tweets by UCSanDiego</a> <script async src="twit.js" charset="utf-8"></script>
+	<div class="widget beta" id="socialmedia_app">
+		<!--<a class="twitter-timeline" href="https://www.twitter.com/UCSanDiego">Tweets by UCSanDiego</a> <script async src="twit.js"></script>-->
 	</div>
-	<div id="campus_app">
+	<div class="widget beta" id="campus_app">
 		Lookup a classroom or other place on campus?
+	</div>
+
+	<div id="bugs_message">
+		Questions or bugs? Go <a href="bugs.html">here</a>!
 	</div>
 </div>
 </body>

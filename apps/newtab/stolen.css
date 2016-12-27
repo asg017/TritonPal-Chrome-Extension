@@ -1,0 +1,199 @@
+/*
+ * TritonHelper v1.3
+ * Copyright 2014, Charles Packer
+ * 2/26/2014
+ */
+
+/* ==========================================================
+	 ++++++++++ BEGIN Class Schedule Formatting +++++++++++++
+	 ==========================================================*/
+#class_schedulexx {clear:both;background:#7dc7e0;}
+#class_schedule {clear:both;}
+#class_schedule h3 {background:transparent;font-size:20px;color:#003366;}
+#class_schedule .cs_box_content {padding-top:0;}
+#class_schedule .notEnrolled {padding-top:0; font-size:16px;padding-bottom: 10px; padding-left: 20px;}
+#class_schedule .cs_box_content table {width:100%;}
+#class_schedule .cs_box_content table th {padding:2px;font: 17px/22px 'Helvetica', Arial, sans-serif;color:#3191ad;width:14.25%;}
+#class_schedule .cs_box_content table td {padding:2px;}
+#class_schedule .cs_box_content table td span.class {display:block;padding:4px;color:#fff;font-size:95%;}
+span.class_group_0 {background:#2B5A88;}
+span.class_group_1 {background:#E6BC2E;}
+span.class_group_2 {background:#0A8DAD;}
+span.class_group_3 {background:#081933;}
+span.class_group_4 {background:#986828;}
+span.class_group_5 {background:#1c3664;}
+span.class_group_6 {background:#BF9D2F;}
+span.class_group_7 {background:#4EA1AF;}
+span.class_group_8 {background:#0A4D84;}
+span.class_group_9 {background:#0A7DAB;}
+/* underline map links in class schedule */
+span.class_group_0 a {text-decoration: underline;}
+span.class_group_1 a {text-decoration: underline;}
+span.class_group_2 a {text-decoration: underline;}
+span.class_group_3 a {text-decoration: underline;}
+span.class_group_4 a {text-decoration: underline;}
+span.class_group_5 a {text-decoration: underline;}
+span.class_group_6 a {text-decoration: underline;}
+span.class_group_7 a {text-decoration: underline;}
+span.class_group_8 a {text-decoration: underline;}
+span.class_group_9 a {text-decoration: underline;}
+/* prevent 'open new window' image from appearing in class schedule map links  */
+span.class_group_0 a[target="_blank"] {background:none}
+span.class_group_1 a[target="_blank"] {background:none}
+span.class_group_2 a[target="_blank"] {background:none}
+span.class_group_3 a[target="_blank"] {background:none}
+span.class_group_4 a[target="_blank"] {background:none}
+span.class_group_5 a[target="_blank"] {background:none}
+span.class_group_6 a[target="_blank"] {background:none}
+span.class_group_7 a[target="_blank"] {background:none}
+span.class_group_8 a[target="_blank"] {background:none}
+span.class_group_9 a[target="_blank"] {background:none}
+a:link {color:#FFFFFF;}
+a:visited {color:#FFFFFF;}
+a:active {color:#FFFFFF;}
+span.class_group_waitlist {background:transparent; border-style: dotted;}
+span.class_group_waitlist a {text-decoration: underline;}
+span.class_group_waitlist a[target="_blank"] {background:none}
+span.class_group_waitlist a:link {color:#000000;}
+span.class_group_waitlist a:visited {color:#000000;}
+span.class_group_waitlist a:active {color:#000000;}
+#announcements_and_deadlines a:link {color:#000000;}
+#announcements_and_deadlines a:visited {color:#000000;}
+#announcements_and_deadlines a:active {color:#000000;}
+#cs_footer a:hover {text-decoration: underline;}
+#tdr_footer_links a:link {color:#0066CC;}
+#tdr_footer_links a:visited {color:#0066CC;}
+#tdr_footer_links a:active {color:#003366;}
+#tdr_footer_links a:hover {color:#003366;}
+#class_schedule .cs_box_header a {color:#0066CC;}
+#class_schedule .cs_box_content table td span.class_group_waitlist {display:block;padding:4px;color:#000000;font-size:95%;}
+#class_schedule .cs_box_footer {text-align:right;background:transparent;font-size:110%;}
+#class_schedule .cs_box_footer a {font-weight:normal;color:#000000;text-decoration:underline;}
+#class_schedule .cs_box_footer a:link {text-decoration:underline;}
+#class_schedule .cs_box_footer a strong {color:#fff;}
+#cs_unscheduled {
+	-moz-background-clip: border;
+	-moz-background-origin: padding;
+	-moz-background-size: auto auto;
+	-x-system-font: none;
+	background-attachment: scroll;
+	background-color: #021633;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+clear: both;
+			 font-family: Arial,sans-serif;
+color: #ffffff;
+			 font-size: 13px;
+			 font-size-adjust: none;
+			 font-stretch: normal;
+			 font-style: normal;
+			 font-variant: normal;
+			 font-weight: normal;
+			 line-height: 13px;
+			 overflow-x: hidden;
+			 overflow-y: hidden;
+			 padding-bottom: 5px;
+			 padding-left: 10px;
+			 padding-right: 10px;
+			 padding-top: 5px;
+}
+
+/* cs box */
+.cs_box {
+background: #e6f6ff;
+color: #000;
+			 margin-bottom: 1em;
+}
+.cs_box h3 {
+	margin-bottom: 0;
+padding: 0 6px;
+				 background-color: #069;
+color: #fff;
+font: 22px/34px Impact, Arial, sans-serif;
+height: 34px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+}
+.cs_box h4 {
+	background-color: #e6f6ff;
+color: #036;
+}
+.cs_box h4 a {
+color: #036;
+}
+/* cs box content */
+.cs_box .cs_box_content {
+padding: 10px 20px;
+}
+/* cs box footer */
+.cs_box .cs_box_footer {
+padding: 4px 20px;
+background: #d0e4ea;
+}
+.cs_box .cs_box_footer a {
+	font-weight: bold;
+color: #036;
+}
+/* annoucement */
+#cycle_prev {
+position: absolute;
+top: 8px;
+right: 40px;
+cursor: pointer;
+}
+#cycle_next {
+position: absolute;
+top: 8px;
+right: 15px;
+cursor: pointer;
+}
+#announcements_and_deadlines h3 {
+background: #111944;
+}
+
+#cs_announcements {
+width: 100%;
+overflow: hidden;
+background: url('images/announcements_bg.png') 0px 0px repeat-x;
+}
+.cs_announcement_group {
+width: 100%;
+}
+.cs_announcement {
+float: left;
+width: 33%;
+margin: 0 0 1% 0;
+}
+.cs_announcement h4 {
+padding: 0 6px;
+background: #a8d3dd;
+color: #036;
+font: 22px/28px Impact, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+}
+.cs_announcement .cs_announcement_content {
+padding: 0px 5px !important;
+				 line-height: 1.2;
+}
+/* cs footer */
+#cs_footer {
+clear: both;
+font: 20px/22px Impact, Arial, sans-serif;
+background: #021633;
+padding: 5px 10px;
+overflow: hidden
+}
+#cs_footer a {
+color: #aac;
+			 text-decoration: none;
+			 margin-right: 70px;
+			 text-transform: uppercase;
+}
+#cs_footer a.last {
+	margin-right: 0;
+}
+/* ==========================================================
+	 ------------ END Class Schedule Formatting -------------
+	 ==========================================================*/
