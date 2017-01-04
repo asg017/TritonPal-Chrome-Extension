@@ -43,7 +43,7 @@ button.addEventListener ("click", function() {
   var infolink = booklink.substring(length);
 
   //Open in a new tab
-  window.open('http://tritonpal.herokuapp.com/apps/calendar/landing.html ' +
+  window.open('http://tritonpal.herokuapp.com/apps/calendar/landing.html' +
               infolink, '_blank');
 
 });
