@@ -32,18 +32,23 @@ document.getElementById('schedule-addevent-div').appendChild(button);
 
 // 3. Add event handler
 button.addEventListener ("click", function() {
+  //Save BookList as a variable
+  var booklink = document.getElementById("viewbooklistlink").getAttribute("href");
+  var length = "https://ucsdbkst.ucsd.edu/wrtx/FullBookList".length; //44
 
-  //Change a div to a different color upon clicking on the button
-  //NOTE: This occurs after the alert seemingly no matter what
-  var htmlbg = document.getElementById("mainpage-top-div");
-  htmlbg.style.background = "#800000";
+  //Alert the BookList link
+  alert(booklink);
 
-  //Grab the BookList link
-  alert(document.getElementById("viewbooklistlink").getAttribute("href"));
+  //Get valuable information from booklink
+  var infolink = booklink.substring(length);
+
+  //Open in a new tab
+  window.open('http://tritonpal.herokuapp.com/apps/calendar/landing.html' +
+              infolink, '_blank');
 
 });
 
-/** CSS of their button fur future reference 
+/** CSS of their button fur future reference
     width: 90px;
     height: 20px !important;
     font-size: 12px;
