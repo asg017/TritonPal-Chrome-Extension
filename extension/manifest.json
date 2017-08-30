@@ -1,0 +1,35 @@
+{
+
+	"manifest_version": 2,
+
+		"name": "TritonPal",
+		"description": "TritonPal adds your UCSD class from WebReg into Google Calendar!",
+		"version": "0.3",
+
+		"icons": {
+			"48": "./icons/48.png"
+		},
+
+		"background" : {
+			"scripts" : [
+				"./background.js"
+			],
+			"persistant":false
+		},
+
+		"permissions" : [
+			"https://calhacks3twitter.herokuapp.com/*",
+			"notifications",
+			"storage"
+			],
+
+
+		"content_scripts": [
+
+		{
+			"matches":
+				["https://act.ucsd.edu/webreg2/*"],
+				"js" : ["./apps/calendar/inject.js"]
+		}
+	]
+}
